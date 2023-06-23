@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dados Pessoais</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="#" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" size="20" maxlength="100" placeholder="Digite seu nome aqui" autofocus autocomplete="off">
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" size="20" maxlength="100" placeholder="Digite seu e-mail" autocomplete="off">
+
+            <label for="tel">Telefone</label>
+            <input type="text" name="tel" id="tel" size="20" maxlength="14" placeholder="(00) 00000-0000" autocomplete="off">
+
+            <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Selecione:</legend>
+        <!-- <form action="#" method="post"> -->
+            <input list="preferencias"placeholder="O que mais gosta de fazer">
+            <datalist id="preferencias" >
+                <option value="Livro"></option>
+                <option value="Esporte"></option>
+                <option value="Comer"></option>
+                <option value="Dormir"></option>
+                <option value="Estudar"></option>
+            </datalist>
+        <!-- </form> -->
+
+            <label for="listar">Esportes</label>
+    <select name="listar" id="listar">
+        <option value="#"></option>
+        <option value="Futebol">Futebol</option>
+        <option value="Volei">Volei</option>
+        <option value="Basquete">Basquete</option>
+    </select>
+    </fieldset>
+
+</body>
+</html>
